@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url('https://vn.blog.kkday.com/wp-content/uploads/chup-anh-dep-bang-dien-thoai-25.jpg') no-repeat center/cover;
+}
+.wrapper{
+    text-align: center;
+    width: 350px;
+    height: 603px;
+    margin: auto;
+    background-image: url('https://vn.blog.kkday.com/wp-content/uploads/chup-anh-dep-bang-dien-thoai-25.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+input{
+    margin-top:30px;
+    width: 80%;
+    opacity: 0.5;
+    height: 30px;
+    border-radius: 0px 10px 0px 10px;
+    border: none;
+}
+.input_active{
+    border-radius: 10px 0px 10px 0px;
+    border:none;
+}
+.title{
+    margin-top: 35px;
+    font-size: 35px;
+    color:white;
+    font-weight: 800;
+    text-shadow:2px 2px black;
+}
+.time{
+    margin-top:10px;
+    font-size: 15px;
+    color:white;
+}
+.temperture_wrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  
+}
+.temperture{
+    margin-top: 40px;
+    width: 50%;
+    border-radius:20px;
+    color:white;
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+    padding:30px 0px 30px 0px;
+    background-color:rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px black;
+    font-weight: bold; 
+}
+.state{
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.bottom_content{
+    margin-top:40px;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+}
+.input:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.background_cold{
+    background-image: url('https://chieuta.com/wp-content/uploads/2015/11/hinh-anh-mua-dong-buon-tam-trang.jpg');
+    background-size: cover;
+}
+.background_cold_body{
+    background:linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,1)),
+    url('https://chieuta.com/wp-content/uploads/2015/11/hinh-anh-mua-dong-buon-tam-trang.jpg') no-repeat center/cover;
+}
+.background_hot_body{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url('https://vn.blog.kkday.com/wp-content/uploads/chup-anh-dep-bang-dien-thoai-25.jpg') no-repeat center/cover;
+}
+.background_hot{
+    background-image: url('https://vn.blog.kkday.com/wp-content/uploads/chup-anh-dep-bang-dien-thoai-25.jpg');
+    background-size:cover;
+}

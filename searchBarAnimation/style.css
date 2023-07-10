@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,#4daf54, #3d8880);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    overflow:hidden;
+}
+input{
+    width: 0px;
+    height: 55px;
+    margin: auto;
+    background-color: black;
+    font-size: 20px;
+    transition: all 1s ease;
+    color: white;
+    border:none;
+    border-radius: 20px;
+}
+i{
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+}
+.show{
+    width: 400px;
+}

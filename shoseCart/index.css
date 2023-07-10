@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(to right,green,green)
+}
+
+.card{
+    margin:120px auto;
+    width:320px;
+    height:400px;
+    background-color: black;
+    border-radius:30px;
+    color:white;
+    position: relative;
+}
+.card_heart, .card_cart{
+    font-size:25px;
+    position: absolute;
+    left:20px;
+    top:15px;
+}
+.card_cart{
+    left:unset;
+    right:20px;
+
+}
+.card_img{
+    display:block;
+    transition: 1s;
+}
+.card_img:hover{
+    transform: translateY(90px) rotate(-20deg);
+}
+.card_img img{
+    width: 90%;
+    object-fit: cover;
+}
+.card-title{
+    width: 100%;
+    color:green;
+}
+.title{
+    text-align: center;
+    color:green;
+    font-size: 2rem;
+}
+.card_price{
+    text-align: center;
+    color:white;
+}
+.card_size{
+    margin-top: 20px;
+    display:flex;
+}
+.number{
+    margin-left:5px;
+
+}
+.card_color{
+    display:flex;
+}
+.green{
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    margin-left:10px;
+}
+.red{
+    margin-top: 5px;
+    width:10px;
+    height:10px;
+    background-color: red;
+    margin-left:10px;
+}
+.card_action{
+    margin-top:20px;
+}
+.card_buy{
+    cursor: pointer;
+    padding:5px;
+    background-color: green;
+    border: solid 2px green;
+    border-radius: 5px;
+    background-color: white;
+    color:green;
+}
+.card_buy:hover{
+    padding:5px;
+    background-color: green;
+    border: solid 2px white;
+    border-radius: 5px;
+    color: white;
+}
+.card_add{
+    cursor: pointer;
+    padding:5px;
+    background-color: green;
+    border: solid 2px white;
+    border-radius: 5px;
+    color: white;
+}
+.card_add:hover{
+    padding:5px;
+    background-color: green;
+    border: solid 2px green;
+    border-radius: 5px;
+    background-color: white;
+    color:green;
+}
+i:focus{
+    color: red;
+}

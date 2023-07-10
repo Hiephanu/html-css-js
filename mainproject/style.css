@@ -1,0 +1,334 @@
+html {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-family:  'Inter', sans-serif;;
+}
+body {
+  margin: 0px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/bg.png");
+  background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+.nav-link-wrapper{
+  display: flex;
+}
+.nav-link{
+  margin-left: 20px;
+  position: relative;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.nav-link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 3px;
+  background-color: white; /* Màu của thanh ngang */
+  transition: width 0.3s linear;
+}
+.nav-link:hover::after{
+  width: 100%;
+  background-color: #486ac6;
+}
+.nav-user{
+    margin-top: 25px;
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.search:hover{
+  opacity: 0.7;
+}
+.user{
+  margin-left: 1rem;
+}
+.user:hover{
+  opacity: 0.7;
+}
+.user-action{
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  width: max-content;
+  padding: 5px 20px 5px 20px;
+  background-color: #486ac6;
+  top:2.5rem;
+  right:0.5rem;
+  border-radius: 20px;
+}
+.user-login,
+.user-register,
+.user-infor{
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.user-login:hover,
+.user-register:hover,
+.user-infor:hover
+{
+  background-color:rgba(255, 255, 255, 0.5); 
+}
+.user-show{
+  display: block;
+}
+.active-nav{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    color:#486ac6;
+    transition: all ease-in-out 0.5s;
+    z-index: 10;
+}
+.header-title{
+  padding-top: 1rem;
+}
+.title{
+  text-align: center;
+  position: relative;
+  margin-top: 20vh;
+  color: white;
+  font-size: 65px;
+  font-weight: 300;
+}
+.title-action{
+  line-height: 1rem;
+}
+.title-name{
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 1rem;
+}
+.header-person{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
+  width: 60%;
+}
+.moutain1 {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  right: 0;
+  z-index: 5;
+  bottom: 0;
+}
+.moutain2 {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+}
+.cloud1,
+.cloud2,
+.cloud3,
+.cloud4,
+.cloud5,
+.cloud6,
+.cloud11,
+.cloud12
+{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  bottom:160px;
+  background-size: cover;
+  animation: animateCloud 8s linear infinite;
+}
+.cloud7,
+.cloud8,
+.cloud9,
+.cloud10{
+  position: absolute;
+  bottom: 170px;
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+}
+.cloud1 {
+  left: 0px;
+  bottom: 100px;
+}
+.cloud2 {
+  left: 15%;
+  width: 300px;
+  height: 200px;
+  bottom: 100px;
+  opacity: 1;
+  animation: none;
+}
+.cloud3 {
+  left: 30%;
+  width: 300px;
+  height: 200px;
+  bottom: 100px;
+  opacity: 0.7;
+  animation: none;
+}
+.cloud4 {
+  left: 45%;
+  bottom:167px;
+}
+.cloud5 {
+  left: 60%;
+}
+.cloud6 {
+  left: 75%;
+}
+.cloud7{
+  bottom:90px;
+  left:0%;
+  opacity: 0.5;
+}
+.cloud8{
+  left:30%;
+  bottom: 100px;
+}
+.cloud9{
+  right:0%;
+  bottom:150px;
+}
+.cloud10{
+  right:30%;
+  bottom:150px;
+  opacity: 0.4;
+}
+.cloud11{
+  left:12%;
+  bottom:105px;
+}
+.cloud12{
+  left:20%;
+  bottom:100px;
+}
+@keyframes animateCloud {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.place-title {
+  opacity: 0;
+  text-align: center;
+  margin-top: 100px;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.place-title.active {
+  opacity: 1;
+  text-align: center;
+  margin-top: 100px;
+  transform: translateY(0);
+}
+.place-detail {
+  opacity: 0;
+  text-align: center;
+  margin-top: 100px;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.place-detail.active {
+  opacity: 1;
+  text-align: center;
+  margin-top: 100px;
+  transform: translateY(0);
+  margin-left: 20px;
+}
+.place-detail{
+  display: grid;
+  grid-template-columns: 48% 47%;
+  gap:40px;
+}
+.hoan-kiem-place{
+  position: relative;
+}
+.important-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hoan-kiem{
+  position: absolute;
+  bottom:100px;
+  left: 40px;
+  color:white;
+  font-weight: 600;
+  font-size: 25px;
+}
+.hanoi-place{
+  display: flex;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  bottom:60px;
+  left:40px;
+}
+.fa-solid{
+  margin-top: 15px;
+}
+.hanoi{
+  margin-left:1rem;
+}
+.place-other{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap:10px;
+}
+.place-item{
+  position: relative;
+}
+.other-img{
+  width: 100%;
+  height: 270px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.trang-an,.kinh-thanh-hue,.pho-co,.ha-long{
+  position: absolute;
+  bottom: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  left:20px;
+}
+.ninh-binh-place,.hue-place,.hoi-an-place,.quang-ninh-place{
+  display: flex;
+  color: white;
+  position: absolute;
+  bottom:15px;
+  left:20px;
+  margin-top: 10px;
+}
+.ninh-binh,.hue,.hoi-an,.quang-ninh{
+  margin-left: 20px;
+}
